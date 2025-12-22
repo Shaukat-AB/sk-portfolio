@@ -23,7 +23,7 @@ export default function Home() {
 
 const Hero = () => {
   return (
-    <section className="max-w-md md:max-w-3xl mx-auto px-4 pt-4 flex flex-col items-center gap-4 text-center">
+    <section className="max-w-md md:max-w-3xl mx-auto px-4 md:pt-10 flex flex-col items-center gap-4 text-center">
       <h1 className="hero-title">Where visions are tailored into reality</h1>
 
       <div className="px-2 space-y-8">
