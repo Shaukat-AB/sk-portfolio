@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
 import './globals.css';
-import { ThemeProvider } from '@/components';
+import { FooterFragment, Navbar, ThemeProvider } from '@/components';
 
 const interSans = Inter({
   variable: '--font-sans',
@@ -28,7 +28,21 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
-          {children}
+          <div className="min-h-screen py-4 relative overflow-y-hidden">
+            <div className="w-full h-24" />
+
+            <header className="absolute px-12 bottom-12 md:top-4 w-full flex md:justify-center items-start h-24">
+              <Navbar />
+            </header>
+
+            <main className="px-4 max-w-3xl mx-auto flex flex-col gap-10">
+              {children}
+            </main>
+
+            <footer className="max-w-3xl mx-auto">
+              <FooterFragment />
+            </footer>
+          </div>
         </ThemeProvider>
       </body>
     </html>
