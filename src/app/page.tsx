@@ -3,10 +3,10 @@ import Link from 'next/link';
 
 export default function Home() {
   return (
-    <div className="min-h-screen py-4 relative">
+    <div className="min-h-screen py-4 relative overflow-y-hidden">
       <div className="w-full h-24" />
 
-      <header className="absolute top-4 w-full h-24 max-w-3xl mx-auto">
+      <header className="absolute px-12 bottom-12 md:top-4 w-full flex md:justify-center items-start h-24">
         <Navbar />
       </header>
 
