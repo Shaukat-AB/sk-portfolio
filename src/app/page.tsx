@@ -1,10 +1,27 @@
-import { Button } from '@/components';
+import { Button, ProjectCard, ProjectsWrapper } from '@/components';
 import Link from 'next/link';
+
+const tempProjects = [
+  {
+    title: 'Realtime Chat App',
+    description:
+      'A seamless real-time chat application built with the MERN stack,featuring modern UI/UX and secure authentication.',
+    pageLink: '/projects/Realtime-Chat-App',
+    githubLink: 'https://github.com/Shaukat-AB/Realtime-Chat-App',
+    demoLink: '',
+  },
+];
 
 export default function Home() {
   return (
     <>
       <Hero />
+
+      <ProjectsWrapper>
+        {tempProjects.map((project) => (
+          <ProjectCard key={project.title} {...project} />
+        ))}
+      </ProjectsWrapper>
     </>
   );
 }

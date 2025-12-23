@@ -1,3 +1,6 @@
+export { ProjectCard } from './project/ProjectCard';
+export { ProjectsWrapper } from './project/ProjectsWrapper';
+
 export { Navbar } from './navbar/Navbar';
 export { FooterFragment } from './footer/FooterFragment';
 
