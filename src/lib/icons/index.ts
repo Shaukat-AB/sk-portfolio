@@ -6,6 +6,7 @@ import {
   SunIcon,
   MoonIcon,
   Bars3CenterLeftIcon,
+  EnvelopeIcon,
 } from '@heroicons/react/24/outline';
 
 export {
@@ -16,4 +17,7 @@ export {
   SunIcon as DayIcon,
   MoonIcon as NightIcon,
   Bars3CenterLeftIcon as MenuIcon,
+  EnvelopeIcon as MailIcon,
 };
+
+export * from './CustomIcon';
