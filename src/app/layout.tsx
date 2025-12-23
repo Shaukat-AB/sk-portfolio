@@ -39,7 +39,7 @@ export default function RootLayout({
               {children}
             </main>
 
-            <footer className="max-w-3xl mx-auto">
+            <footer className="max-w-3xl p-4 min-h-20 pt-10 mx-auto flex flex-col md:flex-row items-center justify-between gap-4">
               <FooterFragment />
             </footer>
           </div>

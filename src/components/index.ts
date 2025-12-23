@@ -2,6 +2,7 @@ export { Navbar } from './navbar/Navbar';
 export { FooterFragment } from './footer/FooterFragment';
 
 export { ThemeProvider } from './ThemeProvider';
+export { MailToLink } from './MailToLink';
 
 // UI
 export * from './ui/button';
