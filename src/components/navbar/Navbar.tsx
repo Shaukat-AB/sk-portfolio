@@ -7,10 +7,15 @@ import {
   MenuIcon,
   ProjectIcon,
 } from '@/lib/icons';
-import { ThemeChangeButton } from './ThemeChangeButton';
 import { NavLink } from './NavLink';
 import { Button } from '../ui/button';
 import { useState } from 'react';
+import dynamic from 'next/dynamic';
+
+const ThemeChangeButton = dynamic(
+  async () => (await import('./ThemeChangeButton')).ThemeChangeButton,
+  { ssr: false }
+);
 
 export const Navbar = () => {
   const [open, setOpen] = useState(false);
