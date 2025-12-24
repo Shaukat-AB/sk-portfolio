@@ -31,7 +31,7 @@ export default function RootLayout({
           <div className="min-h-screen py-4 relative overflow-y-hidden">
             <div className="w-full h-24" />
 
-            <header className="absolute px-12 bottom-12 md:top-4 md:w-full flex md:justify-center items-start h-24">
+            <header className="fixed z-20 mx-4 bottom-21 md:top-4 md:w-full flex md:justify-center items-start h-24">
               <Navbar />
             </header>
 

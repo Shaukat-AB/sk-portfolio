@@ -40,7 +40,7 @@ export const Navbar = () => {
       </div>
       <Button
         onClick={() => setOpen(!open)}
-        className={`cursor-pointer shadow-2xl md:hidden ${
+        className={`bg-bg-focus cursor-pointer shadow-2xl md:hidden ${
           open ? 'bg-bg-active/80' : ''
         }`}
         variant="outline"
