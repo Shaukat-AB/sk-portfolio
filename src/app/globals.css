@@ -11,14 +11,19 @@
   --color-bg-focus: var(--bg-focus);
   --color-bg-active: var(--bg-active);
 
+  --color-text: var(--text);
+  --color-text-focus: var(--text-focus);
+  --color-text-active: var(--text-active);
+
   --color-primary: var(--primary);
   --color-primary-content: var(--primary-content);
   --color-primary-focus: var(--primary-focus);
   --color-primary-active: var(--primary-active);
 
-  --color-text: var(--text);
-  --color-text-focus: var(--text-focus);
-  --color-text-active: var(--text-active);
+  --color-secondary: var(--secondary);
+  --color-secondary-content: var(--secondary-content);
+  --color-secondary-focus: var(--secondary-focus);
+  --color-secondary-active: var(--secondary-active);
 
   /* Shadcn */
   --color-sidebar-ring: var(--sidebar-ring);
@@ -60,19 +65,24 @@
 }
 
 :root {
-  --bg: oklab(97.015% 0 -0.00011);
-  --bg-content: lch(2.74% 0 296.81);
-  --bg-focus: oklab(98.51100000000001% 0 -0.00011);
-  --bg-active: oklab(92.191% 0 -0.0001);
+  --bg: oklch(96.7% 0.003 264.542);
+  --bg-content: oklch(13% 0.028 261.692);
+  --bg-focus: oklch(98.5% 0.002 247.839);
+  --bg-active: oklch(92.8% 0.006 264.531);
 
-  --text: oklab(20.463% 0 -0.00002);
-  --text-focus: oklch(14.479% 0.00002 271.152);
-  --text-active: oklab(26.862000000000002% 0 -0.00003);
+  --text: oklch(21% 0.006 285.885);
+  --text-focus: oklch(14.1% 0.005 285.823);
+  --text-active: oklch(37% 0.013 285.805);
 
-  --primary: oklab(91.76299999999999% -0.07319 -0.03364);
-  --primary-content: oklab(39.716% -0.04743 -0.05127);
-  --primary-focus: oklab(95.56400000000001% -0.04162 -0.01797);
-  --primary-active: oklab(79.693% -0.11631 -0.07791);
+  --primary: oklch(91.7% 0.08 205.041);
+  --primary-content: oklch(39.8% 0.07 227.392);
+  --primary-focus: oklch(95.6% 0.045 203.388);
+  --primary-active: oklch(78.9% 0.154 211.53);
+
+  --secondary: oklch(20.8% 0.042 265.755);
+  --secondary-content: oklch(96.8% 0.007 247.896);
+  --secondary-focus: oklch(37.2% 0.044 257.287);
+  --secondary-active: oklch(12.9% 0.042 264.695);
 
   /* Shadcn */
   --radius: 0.625rem;
@@ -111,19 +121,24 @@
 
 .dark {
   /* Todo: update colors to dark mode colors */
-  --bg: oklab(97.015% 0 -0.00011);
-  --bg-content: lch(2.74% 0 296.81);
-  --bg-focus: oklab(98.51100000000001% 0 -0.00011);
-  --bg-active: oklab(92.191% 0 -0.0001);
+  --bg: oklch(21% 0.034 264.665);
+  --bg-content: oklch(98.5% 0.002 247.839);
+  --bg-focus: oklch(13% 0.028 261.692);
+  --bg-active: oklch(27.8% 0.033 256.848);
 
-  --text: oklab(20.463% 0 -0.00002);
-  --text-focus: oklch(14.479% 0.00002 271.152);
-  --text-active: oklab(26.862000000000002% 0 -0.00003);
+  --text: oklch(96.7% 0.001 286.375);
+  --text-focus: oklch(98.5% 0 0);
+  --text-active: oklch(87.1% 0.006 286.286);
 
-  --primary: oklab(91.76299999999999% -0.07319 -0.03364);
-  --primary-content: oklab(39.716% -0.04743 -0.05127);
-  --primary-focus: oklab(95.56400000000001% -0.04162 -0.01797);
-  --primary-active: oklab(79.693% -0.11631 -0.07791);
+  --primary: oklch(30.2% 0.056 229.695);
+  --primary-content: oklch(86.5% 0.127 207.078);
+  --primary-focus: oklch(45% 0.085 224.283);
+  --primary-active: oklch(20.2% 0.056 229.695);
+
+  --secondary: oklch(86.9% 0.022 252.894);
+  --secondary-content: oklch(20.8% 0.042 265.755);
+  --secondary-focus: oklch(98.4% 0.003 247.858);
+  --secondary-active: oklch(70.4% 0.04 256.788);
 
   /* Shadcn */
   /* --background: oklch(0.129 0.042 264.695); */
@@ -132,8 +147,8 @@
   --card-foreground: oklch(0.984 0.003 247.858);
   --popover: oklch(0.208 0.042 265.755);
   --popover-foreground: oklch(0.984 0.003 247.858);
-  --primary: oklch(0.929 0.013 255.508);
-  --primary-foreground: oklch(0.208 0.042 265.755);
+  /* --primary: oklch(0.929 0.013 255.508); */
+  /* --primary-foreground: oklch(0.208 0.042 265.755); */
   /* --secondary: oklch(0.279 0.041 260.031); */
   /* --secondary-foreground: oklch(0.984 0.003 247.858); */
   --muted: oklch(0.279 0.041 260.031);
