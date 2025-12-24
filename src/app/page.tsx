@@ -1,9 +1,31 @@
-import { Button, ProjectCard, ProjectsWrapper } from '@/components';
+import {
+  Button,
+  ContactCard,
+  ProjectCard,
+  ProjectsWrapper,
+  Separator,
+} from '@/components';
 import Link from 'next/link';
 
 const tempProjects = [
   {
     title: 'Realtime Chat App',
+    description:
+      'A seamless real-time chat application built with the MERN stack,featuring modern UI/UX and secure authentication.',
+    pageLink: '/projects/Realtime-Chat-App',
+    githubLink: 'https://github.com/Shaukat-AB/Realtime-Chat-App',
+    demoLink: '',
+  },
+  {
+    title: 'Realtime Chat App 2',
+    description:
+      'A seamless real-time chat application built with the MERN stack,featuring modern UI/UX and secure authentication.',
+    pageLink: '/projects/Realtime-Chat-App',
+    githubLink: 'https://github.com/Shaukat-AB/Realtime-Chat-App',
+    demoLink: '',
+  },
+  {
+    title: 'Realtime Chat App 3',
     description:
       'A seamless real-time chat application built with the MERN stack,featuring modern UI/UX and secure authentication.',
     pageLink: '/projects/Realtime-Chat-App',
@@ -16,12 +38,24 @@ export default function Home() {
   return (
     <>
       <Hero />
-
       <ProjectsWrapper>
-        {tempProjects.map((project) => (
-          <ProjectCard key={project.title} {...project} />
-        ))}
+        <ProjectCard {...tempProjects[0]} />
       </ProjectsWrapper>
+
+      <Separator orientation="horizontal" className="max-w-10/12" />
+      <div className="py-10">
+        <ContactCard />
+      </div>
+      <Separator orientation="horizontal" className="ml-auto max-w-10/12" />
+
+      {/* Temporary Data*/}
+      <ProjectsWrapper>
+        {tempProjects.map((project, i) =>
+          i > 0 ? <ProjectCard key={project.title} {...project} /> : null
+        )}
+      </ProjectsWrapper>
+
+      <ContactCard />
     </>
   );
 }

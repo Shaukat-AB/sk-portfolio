@@ -5,20 +5,21 @@ import { cva, type VariantProps } from 'class-variance-authority';
 import { cn } from '@/lib/utils/index';
 
 const buttonVariants = cva(
-  "inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-full text-sm font-medium transition-all disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg:not([class*='size-'])]:size-4 shrink-0 [&_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive",
+  "cursor-pointer inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-full text-sm font-medium transition-all disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg:not([class*='size-'])]:size-4 shrink-0 [&_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive",
   {
     variants: {
       variant: {
         default:
-          'bg-primary text-primary-content hover:bg-primary-focus active:bg-primary-focus',
+          'bg-primary font-semibold text-primary-content hover:bg-primary-focus active:bg-primary-focus',
         destructive:
           'bg-destructive text-white hover:bg-destructive/90 focus-visible:ring-destructive/20 dark:focus-visible:ring-destructive/40 dark:bg-destructive/60',
         outline:
-          'border border-bg-active bg-focus shadow-xs hover:bg-bg-active text-bg-content',
-        secondary: 'bg-bg-content text-bg rounded-full hover:bg-bg-content/80',
+          'border border-bg-active bg-focus font-semibold shadow-xs hover:bg-bg-active text-bg-content',
+        secondary:
+          'bg-bg-content font-semibold text-bg rounded-full hover:bg-bg-content/80',
         ghost:
           'hover:bg-accent hover:text-accent-foreground dark:hover:bg-accent/50',
-        link: 'text-primary-content underline-offset-4 hover:underline',
+        link: 'text-primary-content font-semibold underline-offset-4 hover:underline',
       },
       size: {
         unchanged: '',
