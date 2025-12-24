@@ -45,6 +45,7 @@ export const Navbar = () => {
         }`}
         variant="outline"
         size="equal"
+        aria-label="Navigation Menu"
       >
         <MenuIcon className="size-5" />
       </Button>

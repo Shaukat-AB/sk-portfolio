@@ -20,6 +20,7 @@ export const FooterFragment = () => {
           className="p-2 w-10 h-10"
           variant="outline"
           size="equal"
+          aria-label="Github"
         >
           <a href={config.GITHUB_LINK}>
             <GitHubIcon className="size-5 text-text-active" />
@@ -31,6 +32,7 @@ export const FooterFragment = () => {
           className="p-2 w-10 h-10"
           variant="outline"
           size="equal"
+          aria-label="LinkdIn"
         >
           <a href={config.LINKEDIN_LINK}>
             <LinkedInIcon className="size-5 text-text-active" />
@@ -43,8 +45,11 @@ export const FooterFragment = () => {
             className="p-2 w-10 h-10"
             variant="outline"
             size="equal"
+            aria-label="Send Email"
           >
-            <MailIcon className="size-5" />
+            <span>
+              <MailIcon className="size-5" />
+            </span>
           </Button>
         </MailToLink>
       </div>
