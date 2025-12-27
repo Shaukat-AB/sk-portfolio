@@ -4,54 +4,29 @@ import { CardContent, CardDescription, CardTitle } from '../ui/card';
 import { ExternalLinkIcon, GitHubIcon, LongArrowRightIcon } from '@/lib/icons';
 import { ImageCarousel } from './ImageCarousel';
 import { Activity } from 'react';
-
-type ProjectProps = {
-  title: string;
-  description: string;
-  pageLink: string;
-  githubLink: string;
-  demoLink?: string | undefined;
-};
+import { ProjectMetaData } from '@/lib/projects';
 
 export const ProjectCard = ({
   title,
   description,
-  pageLink,
+  param,
   githubLink,
-  demoLink,
-}: ProjectProps) => {
+  demoLink = undefined,
+}: ProjectMetaData) => {
   return (
     <CardContent className="space-y-6 pt-3 pb-6 max-w-3xl">
       <ImageCarousel />
 
       <div className="flex flex-col gap-4 md:flex-row">
-        <CardTitle className="w-full max-w-sm">{title}</CardTitle>
+        <CardTitle className="flex-1">{title}</CardTitle>
 
-        <div className="space-y-4">
-          <div className="flex gap-4 justify-start">
-            <Button asChild className="text-sm" variant="outline" size="sm">
-              <a href={githubLink}>
-                <GitHubIcon className="size-4 text-text-active" />
-                View Github
-              </a>
-            </Button>
-
-            <Activity
-              mode={demoLink?.startsWith('http') ? 'visible' : 'hidden'}
-            >
-              <Button asChild className="text-sm" variant="outline" size="sm">
-                <a href={demoLink}>
-                  <ExternalLinkIcon className="size-4" />
-                  View Demo
-                </a>
-              </Button>
-            </Activity>
-          </div>
+        <div className="flex-1 space-y-4">
+          <ProjectButtonGroup githubLink={githubLink} demoLink={demoLink} />
 
           <CardDescription>{description}</CardDescription>
 
           <Button asChild variant="link" size="unchanged">
-            <Link href={{ pathname: pageLink }}>
+            <Link href={`/projects/${param}`}>
               Read case study
               <LongArrowRightIcon />
             </Link>
@@ -59,5 +34,30 @@ export const ProjectCard = ({
         </div>
       </div>
     </CardContent>
+  );
+};
+
+export const ProjectButtonGroup = ({
+  githubLink,
+  demoLink,
+}: Pick<ProjectMetaData, 'githubLink' | 'demoLink'>) => {
+  return (
+    <div className="flex gap-4 justify-start">
+      <Button asChild className="text-sm" variant="outline" size="sm">
+        <a href={githubLink}>
+          <GitHubIcon className="size-4 text-text-active" />
+          View Github
+        </a>
+      </Button>
+
+      <Activity mode={demoLink?.startsWith('http') ? 'visible' : 'hidden'}>
+        <Button asChild className="text-sm" variant="outline" size="sm">
+          <a href={demoLink}>
+            <ExternalLinkIcon className="size-4" />
+            View Demo
+          </a>
+        </Button>
+      </Activity>
+    </div>
   );
 };

@@ -2,7 +2,8 @@ export { Navbar } from './navbar/Navbar';
 export { FooterFragment } from './footer/FooterFragment';
 
 export { ProjectsWrapper } from './project/ProjectsWrapper';
-export { ProjectCard } from './project/ProjectCard';
+export { ProjectCard, ProjectButtonGroup } from './project/ProjectCard';
+export { ImageCarousel } from './project/ImageCarousel';
 
 export { ContactCard } from './ContactCard';
 export { MailToLink } from './MailToLink';
