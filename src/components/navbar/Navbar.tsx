@@ -21,9 +21,9 @@ export const Navbar = () => {
   const [open, setOpen] = useState(false);
 
   return (
-    <div className="grid grid-cols-[auto_auto] md:inline-block absolute py-4 space-x-4 bottom-0 md:relative">
-      <div className={open ? 'col-start-2' : 'hidden md:inline-block'}>
-        <nav className="min-w-40 max-w-3xs md:max-w-3xl p-2 bg-bg-focus border border-bg-active md:rounded-full rounded-3xl shadow-xl">
+    <div className="grid grid-cols-[auto_100%] md:inline-block absolute py-4 space-x-4 bottom-0 md:relative">
+      <div className={open ? 'col-start-2 w-full' : 'hidden md:inline-block'}>
+        <nav className="min-w-40 p-2 bg-bg-focus border border-bg-active md:rounded-full rounded-3xl shadow-xl">
           <ul className="w-full py-3 md:py-0 inline-flex flex-col items-center md:flex-row gap-5">
             <NavLink href="/" name="Home">
               <HomeIcon />

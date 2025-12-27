@@ -1,6 +1,5 @@
 import {
   HomeIcon,
-  ClipboardDocumentListIcon,
   UserCircleIcon,
   PhotoIcon,
   SunIcon,
@@ -11,11 +10,12 @@ import {
   ArrowTopRightOnSquareIcon,
   ChevronRightIcon,
   ChevronLeftIcon,
+  ClipboardDocumentIcon,
 } from '@heroicons/react/24/outline';
 
 export {
   HomeIcon,
-  ClipboardDocumentListIcon as ProjectIcon,
+  ClipboardDocumentIcon as ProjectIcon,
   UserCircleIcon as AboutIcon,
   PhotoIcon as GalleryIcon,
   SunIcon as DayIcon,

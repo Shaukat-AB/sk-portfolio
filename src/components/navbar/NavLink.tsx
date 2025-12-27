@@ -10,7 +10,7 @@ export const NavLink = (
   const pathname = usePathname();
 
   return (
-    <li className="min-w-11/12 md:min-w-20">
+    <ListItemWrapper>
       <Link
         className={`${
           pathname === props.href ? 'inset-shadow-sm shadow bg-bg-active' : ''
@@ -18,8 +18,12 @@ export const NavLink = (
         {...props}
       >
         <span className="size-5">{props.children}</span>
-        <span className="inline font-semibold px-1">{props.name}</span>
+        <span className="inline font-semibold">{props.name}</span>
       </Link>
-    </li>
+    </ListItemWrapper>
   );
+};
+
+export const ListItemWrapper = ({ children }: { children: ReactNode }) => {
+  return <li className="flex-1 min-w-11/12 md:min-w-20 text-sm">{children}</li>;
 };
