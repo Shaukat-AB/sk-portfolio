@@ -179,7 +179,7 @@
     @apply border-border outline-ring/50;
   }
   body {
-    @apply bg-bg text-bg-content font-sans;
+    @apply bg-bg-active text-bg-content font-sans;
   }
 }
 
@@ -189,5 +189,8 @@
   }
   .hero-text {
     @apply text-lg text-text-active md:text-xl;
+  }
+  .page-title {
+    @apply text-center text-2xl md:text-4xl md:mb-4 max-w-md font-semibold mb-2;
   }
 }

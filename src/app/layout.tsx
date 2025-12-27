@@ -28,18 +28,18 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
-          <div className="min-h-screen py-4 relative overflow-y-hidden">
-            <div className="w-full h-24" />
+          <div className="min-h-screen relative overflow-y-hidden">
+            <div className="bg-bg max-w-3xl mx-auto pt-4 w-full h-24" />
 
             <header className="fixed z-20 mx-4 bottom-21 md:top-4 md:w-full flex md:justify-center items-start h-24">
               <Navbar />
             </header>
 
-            <main className="px-4 max-w-3xl mx-auto flex flex-col gap-10">
+            <main className="bg-bg px-4 md:px-8 md:pt-10 max-w-3xl mx-auto flex flex-col gap-10">
               {children}
             </main>
 
-            <footer className="max-w-3xl p-4 min-h-20 pt-10 mx-auto flex flex-col md:flex-row items-center justify-between gap-4">
+            <footer className="bg-bg max-w-3xl p-8 md:p-10 min-h-20 pt-10 mx-auto flex flex-col md:flex-row items-center justify-between gap-4">
               <FooterFragment />
             </footer>
           </div>
