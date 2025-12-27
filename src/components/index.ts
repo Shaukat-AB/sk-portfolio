@@ -1,5 +1,5 @@
 export { Navbar } from './navbar/Navbar';
-export { FooterFragment } from './footer/FooterFragment';
+export { FooterFragment, SocialLinks } from './footer/FooterFragment';
 
 export { ProjectsWrapper } from './project/ProjectsWrapper';
 export { ProjectCard, ProjectButtonGroup } from './project/ProjectCard';
