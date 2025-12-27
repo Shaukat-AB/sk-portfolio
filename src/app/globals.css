@@ -191,6 +191,6 @@
     @apply text-lg text-text-active md:text-xl;
   }
   .page-title {
-    @apply text-center text-2xl md:text-4xl md:mb-4 max-w-md font-semibold mb-2;
+    @apply text-center mx-auto text-2xl md:text-4xl md:mb-4 max-w-md font-semibold mb-2;
   }
 }
