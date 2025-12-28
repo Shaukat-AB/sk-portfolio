@@ -185,10 +185,10 @@
 
 @layer components {
   .hero-title {
-    @apply text-4xl md:text-6xl text-text-focus font-bold leading-none;
+    @apply text-4xl sm:text-5xl md:text-6xl text-text-focus font-bold leading-none;
   }
   .hero-text {
-    @apply text-lg text-text-active md:text-xl;
+    @apply text-base text-text-active md:text-lg;
   }
   .page-title {
     @apply text-center mx-auto text-2xl md:text-4xl md:mb-4 max-w-md font-semibold mb-2;

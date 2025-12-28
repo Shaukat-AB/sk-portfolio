@@ -37,15 +37,16 @@ export default async function Home() {
 
 const Hero = () => {
   return (
-    <section className="max-w-md md:max-w-3xl mx-auto px-4 flex flex-col items-center gap-4 text-center">
+    <section className="max-w-md md:max-w-xl mx-auto px-4 flex flex-col items-center gap-4 text-center">
       <h1 className="hero-title">Where visions are tailored into reality</h1>
 
-      <div className="px-2 space-y-8">
+      <div className="px-2 space-y-10 mb-8">
         <p className="hero-text">
           I am Shaukat, a full stack engineer specializing in creating full
           stack solutions that not only function but also inspire
         </p>
-        <Button asChild className="mb-8">
+
+        <Button asChild>
           <Link href="/projects">Shaukat | Featured Projects</Link>
         </Button>
       </div>
