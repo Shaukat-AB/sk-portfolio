@@ -11,6 +11,7 @@ import {
   ChevronRightIcon,
   ChevronLeftIcon,
   ClipboardDocumentIcon,
+  XMarkIcon,
 } from '@heroicons/react/24/outline';
 
 export {
@@ -26,6 +27,7 @@ export {
   ArrowTopRightOnSquareIcon as ExternalLinkIcon,
   ChevronRightIcon as NextIcon,
   ChevronLeftIcon as PreviousIcon,
+  XMarkIcon as XIcon,
 };
 
 export * from './CustomIcon';
