@@ -24,7 +24,7 @@ export async function generateMetadata({
   params: Promise<{ name: string }>;
 }): Promise<Metadata> {
   const { name } = await params;
-  const { frontmatter: metadata } = await getProjectByName(name);
+  const { metadata } = await getProjectByName(name);
 
   if (!metadata?.title) throw new Error(`Metadata undefined! (${name})`);
 
@@ -40,9 +40,7 @@ export default async function Page({
   params: Promise<{ name: string }>;
 }) {
   const { name } = await params;
-  const { default: Project, frontmatter: metadata } = await getProjectByName(
-    name
-  );
+  const { Project, metadata } = await getProjectByName(name);
 
   const relatedProjects = (await getProjectsMetadata())
     .filter((p) => p.orderIndex != metadata.orderIndex)
@@ -62,7 +60,7 @@ export default async function Page({
       </div>
 
       <div className="px-10">
-        <ImageCarousel />
+        <ImageCarousel images={metadata.images} param={metadata.param} />
       </div>
 
       <div className="px-10 space-y-6 md:grid md:grid-cols-2 md:items-start">
