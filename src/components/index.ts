@@ -8,6 +8,8 @@ export { ImageCarousel } from './project/ImageCarousel';
 export { ContactCard } from './ContactCard';
 export { MailToLink } from './MailToLink';
 
+export { ZoomableImage } from './gallery/ZoomableImage';
+
 export { ThemeProvider } from './ThemeProvider';
 
 // UI
