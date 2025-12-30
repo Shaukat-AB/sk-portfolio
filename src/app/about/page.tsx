@@ -4,8 +4,12 @@ import {
   CardTitle,
   SocialLinks,
 } from '@/components/server';
-
+import { Metadata } from 'next';
 import { ReactNode } from 'react';
+
+export const metadata: Metadata = {
+  title: 'About',
+};
 
 export default function Page() {
   return (

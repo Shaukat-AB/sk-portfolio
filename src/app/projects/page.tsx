@@ -1,5 +1,10 @@
 import { ProjectCard, ProjectsWrapper } from '@/components/server';
 import { getProjectsMetadata } from '@/lib/projects';
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Featured Projects',
+};
 
 export default async function Page() {
   const projects = await getProjectsMetadata();

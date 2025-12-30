@@ -1,5 +1,10 @@
 import { ZoomableImage } from '@/components/server';
 import { getAllProjectsImagePaths } from '@/lib/projects';
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Gallery',
+};
 
 const { minLength, mobileImages, desktopImages } = getAllProjectsImagePaths();
 

@@ -10,7 +10,10 @@ const interSans = Inter({
 });
 
 export const metadata: Metadata = {
-  title: 'Portfolio',
+  title: {
+    default: 'Shaukat - Portfolio',
+    template: '%s | Shaukat - Portfolio',
+  },
   description:
     'This project showcases my work and skills as developer built using Next.js and Tailwind CSS for responsive layout.',
 };
