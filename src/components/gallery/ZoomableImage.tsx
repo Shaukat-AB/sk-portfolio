@@ -33,7 +33,7 @@ export const ZoomableImage = ({
               src={src}
               alt={alt}
               className={`object-contain rounded-xl ${className}`}
-              sizes="(max-width: min(1440px, 100%)) 100vw"
+              sizes="(max-width: 786px) 100vw"
             />
           </div>
         </div>

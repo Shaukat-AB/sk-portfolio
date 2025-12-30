@@ -21,7 +21,11 @@ const components: MDXComponents = {
     </CardContent>
   ),
   img: (props) => (
-    <Image sizes="100vw" className="w-full h-auto" {...(props as ImageProps)} />
+    <Image
+      sizes="(max-width: 786px) 100vw"
+      className="w-full h-auto"
+      {...(props as ImageProps)}
+    />
   ),
 };
 
