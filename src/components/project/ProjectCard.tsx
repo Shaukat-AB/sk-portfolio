@@ -3,7 +3,6 @@ import { Button } from '../ui/button';
 import { CardContent, CardDescription, CardTitle } from '../ui/card';
 import { ExternalLinkIcon, GitHubIcon, LongArrowRightIcon } from '@/lib/icons';
 import { ImageCarousel } from './ImageCarousel';
-import { Activity } from 'react';
 import { ProjectMetaData } from '@/lib/projects';
 
 export const ProjectCard = ({
@@ -51,14 +50,14 @@ export const ProjectButtonGroup = ({
         </a>
       </Button>
 
-      <Activity mode={demoLink?.startsWith('http') ? 'visible' : 'hidden'}>
+      {demoLink?.startsWith('http') && (
         <Button asChild className="text-sm" variant="outline" size="sm">
           <a href={demoLink}>
             <ExternalLinkIcon className="size-4" />
             View Demo
           </a>
         </Button>
-      </Activity>
+      )}
     </div>
   );
 };
