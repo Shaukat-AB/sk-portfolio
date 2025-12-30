@@ -11,3 +11,5 @@ export { ZoomableImage } from './gallery/ZoomableImage';
 // UI
 export * from './ui/button';
 export * from './ui/card';
+
+export { GlassBg } from './GlassBg';

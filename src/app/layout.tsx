@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
 import './globals.css';
-import { FooterFragment } from '@/components/server';
+import { FooterFragment, GlassBg } from '@/components/server';
 import { Navbar, ThemeProvider } from '@/components/client';
 
 const interSans = Inter({
@@ -30,9 +30,11 @@ export default function RootLayout({
           disableTransitionOnChange
         >
           <div className="min-h-screen relative overflow-y-hidden">
-            <div className="bg-bg max-w-3xl mx-auto pt-4 w-full h-24" />
+            <div className="bg-bg max-w-3xl mx-auto pt-4 w-full h-24"></div>
 
-            <header className="fixed z-20 mx-4 bottom-21 md:top-4 md:w-full flex md:justify-center items-start h-24">
+            <GlassBg variant="md" />
+
+            <header className="fixed z-20 bottom-10 md:top-4 md:w-full flex md:justify-center items-start h-24">
               <Navbar />
             </header>
 
