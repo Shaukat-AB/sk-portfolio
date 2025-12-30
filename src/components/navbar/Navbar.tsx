@@ -6,10 +6,11 @@ import {
   HomeIcon,
   MenuIcon,
   ProjectIcon,
+  XIcon,
 } from '@/lib/icons';
 import { NavLink } from './NavLink';
 import { Button } from '../ui/button';
-import { useState } from 'react';
+import { Activity, useState } from 'react';
 import dynamic from 'next/dynamic';
 import { GlassBg } from '../GlassBg';
 
@@ -54,12 +55,26 @@ export const Navbar = () => {
           size="equal"
           aria-label="Navigation Menu"
         >
-          <MenuIcon className="size-5" />
+          <Activity mode={open ? 'hidden' : 'visible'}>
+            <MenuIcon className="size-5" />
+          </Activity>
+
+          <Activity mode={!open ? 'hidden' : 'visible'}>
+            <XIcon className="size-5" />
+          </Activity>
         </Button>
       </div>
+
       <GlassBg
-        className={!open ? 'max-h-0 opacity-0 pointer-events-none' : ''}
+        className={`pointer-events-none ${!open ? 'max-h-0 opacity-0' : ''}`}
       />
+
+      {open && (
+        <div
+          onClick={() => setOpen(false)}
+          className="to-black/10 bg-linear-0 to-80% z-98 md:hidden fixed top-0 min-w-screen min-h-screen overflow-hidden"
+        ></div>
+      )}
     </>
   );
 };
