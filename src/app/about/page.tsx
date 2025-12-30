@@ -3,7 +3,8 @@ import {
   CardDescription,
   CardTitle,
   SocialLinks,
-} from '@/components';
+} from '@/components/server';
+
 import { ReactNode } from 'react';
 
 export default function Page() {

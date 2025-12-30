@@ -1,4 +1,4 @@
-import { ProjectCard, ProjectsWrapper } from '@/components';
+import { ProjectCard, ProjectsWrapper } from '@/components/server';
 import { getProjectsMetadata } from '@/lib/projects';
 
 export default async function Page() {

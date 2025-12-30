@@ -1,4 +1,4 @@
-import { ZoomableImage } from '@/components';
+import { ZoomableImage } from '@/components/server';
 import { getAllProjectsImagePaths } from '@/lib/projects';
 
 const { minLength, mobileImages, desktopImages } = getAllProjectsImagePaths();

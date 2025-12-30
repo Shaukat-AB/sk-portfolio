@@ -1,7 +1,8 @@
 import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
 import './globals.css';
-import { FooterFragment, Navbar, ThemeProvider } from '@/components';
+import { FooterFragment } from '@/components/server';
+import { Navbar, ThemeProvider } from '@/components/client';
 
 const interSans = Inter({
   variable: '--font-sans',

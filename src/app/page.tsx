@@ -3,8 +3,9 @@ import {
   ContactCard,
   ProjectCard,
   ProjectsWrapper,
-  Separator,
-} from '@/components';
+} from '@/components/server';
+import { Separator } from '@/components/client';
+
 import { getProjectsMetadata } from '@/lib/projects';
 import Link from 'next/link';
 

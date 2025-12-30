@@ -1,10 +1,10 @@
 import {
-  ImageCarousel,
   ProjectButtonGroup,
   ProjectCard,
   ProjectsWrapper,
-  Separator,
-} from '@/components';
+} from '@/components/server';
+import { ImageCarousel, Separator } from '@/components/client';
+
 import {
   getProjectByName,
   getProjectNames,

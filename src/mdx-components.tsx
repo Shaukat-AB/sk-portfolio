@@ -1,6 +1,6 @@
 import type { MDXComponents } from 'mdx/types';
 import Image, { ImageProps } from 'next/image';
-import { CardContent, CardDescription, CardTitle } from './components';
+import { CardContent, CardDescription, CardTitle } from './components/server';
 
 const components: MDXComponents = {
   h2: (props) => (
