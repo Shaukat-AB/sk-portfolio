@@ -33,11 +33,11 @@ export default function RootLayout({
           disableTransitionOnChange
         >
           <div className="min-h-screen relative overflow-y-hidden">
-            <div className="bg-bg max-w-3xl mx-auto pt-4 w-full h-24"></div>
+            <div className="bg-bg max-w-3xl mx-auto pt-4 w-full h-20"></div>
 
             <GlassBg variant="md" />
 
-            <header className="fixed z-20 bottom-10 md:top-4 md:w-full flex md:justify-center items-start h-24">
+            <header className="fixed z-20 bottom-10 md:top-4 md:w-full flex md:justify-center items-start h-20">
               <Navbar />
             </header>
 
