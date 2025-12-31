@@ -1,6 +1,6 @@
 # Sk Portfolio
 
-This is a comprehensive showcase of my work and skills as a developer. Built using **Next.js**, the project offers a seamless and responsive user experience, catering to various devices. Its purpose is to highlight my proficiency in modern web development while ensuring fast loading times and excellent SEO practices.
+This is a comprehensive showcase my skills as full stack developer. Built using **Next.js**, the project offers a seamless and responsive user experience, catering to various devices. Its purpose is to showcase my work and skills in modern web development.
 
 ---
 

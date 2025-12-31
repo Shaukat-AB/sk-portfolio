@@ -15,7 +15,7 @@ export const metadata: Metadata = {
     template: '%s | Shaukat - Portfolio',
   },
   description:
-    'This project showcases my work and skills as developer built using Next.js and Tailwind CSS for responsive layout.',
+    'This project showcases my work and skills as full stack developer built using Next.js and Tailwind CSS for responsive layout.',
 };
 
 export default function RootLayout({
