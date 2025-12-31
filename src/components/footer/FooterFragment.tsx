@@ -12,7 +12,15 @@ export const FooterFragment = () => {
       <p className="text-sm text-text-active">
         &copy; {currentYear} /{' '}
         <strong className="font-semibold">Shaukat Ali</strong> / Designed and
-        built
+        built /
+        <Button
+          asChild
+          className="px-1 text-text-active"
+          size="sm"
+          variant="link"
+        >
+          <a href={`${config.GITHUB_LINK}sk-portfolio`}>View source code</a>
+        </Button>
       </p>
 
       <SocialLinks />
