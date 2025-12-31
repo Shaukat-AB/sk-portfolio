@@ -17,7 +17,7 @@ export const ImageCarousel = ({
 }: Pick<ProjectMetaData, 'images' | 'param'> & Pick<ImageProps, 'preload'>) => {
   return (
     <Carousel opts={{ align: 'start' }}>
-      <CarouselPrevious />
+      <CarouselPrevious className="hidden md:inline-flex" />
       <CarouselContent>
         {Array.isArray(images) &&
           images.map((image, i) => (
@@ -30,7 +30,7 @@ export const ImageCarousel = ({
             </CarouselItem>
           ))}
       </CarouselContent>
-      <CarouselNext />
+      <CarouselNext className="hidden md:inline-flex" />
     </Carousel>
   );
 };
