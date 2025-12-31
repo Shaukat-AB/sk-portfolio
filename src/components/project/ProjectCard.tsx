@@ -12,10 +12,15 @@ export const ProjectCard = ({
   githubLink,
   demoLink = undefined,
   images = undefined,
+  orderIndex = undefined,
 }: ProjectMetaData) => {
   return (
     <CardContent className="space-y-6 pt-3 pb-6 max-w-3xl">
-      <ImageCarousel images={images} param={param} />
+      <ImageCarousel
+        images={images}
+        param={param}
+        preload={!!orderIndex && parseInt(orderIndex) === 0}
+      />
 
       <div className="flex flex-col gap-4 md:flex-row">
         <CardTitle className="flex-1">{title}</CardTitle>

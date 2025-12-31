@@ -60,7 +60,11 @@ export default async function Page({
       </div>
 
       <div className="px-10">
-        <ImageCarousel images={metadata.images} param={metadata.param} />
+        <ImageCarousel
+          images={metadata.images}
+          param={metadata.param}
+          preload
+        />
       </div>
 
       <div className="px-10 space-y-6 md:grid md:grid-cols-2 md:items-start">
