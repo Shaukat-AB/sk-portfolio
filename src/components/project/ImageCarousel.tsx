@@ -32,8 +32,13 @@ export const ImageCarousel = ({
   }, [api]);
 
   return (
-    <Carousel opts={{ align: 'start' }} setApi={setApi}>
+    <Carousel
+      className="focus:ring-primary-content"
+      opts={{ align: 'start' }}
+      setApi={setApi}
+    >
       <CarouselPrevious className="hidden md:inline-flex" />
+
       <CarouselContent>
         {Array.isArray(images) &&
           images.map((image, i) => (

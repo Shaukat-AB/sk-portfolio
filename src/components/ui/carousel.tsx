@@ -121,10 +121,14 @@ function Carousel({
     >
       <div
         onKeyDownCapture={handleKeyDown}
-        className={cn('relative', className)}
+        className={cn(
+          'relative focus:outline-none focus-visible:ring-2',
+          className
+        )}
         role="region"
         aria-roledescription="carousel"
         data-slot="carousel"
+        tabIndex={0}
         {...props}
       >
         {children}
