@@ -66,7 +66,9 @@ export const Navbar = () => {
       </div>
 
       <GlassBg
-        className={`pointer-events-none ${!open ? 'max-h-0 opacity-0' : ''}`}
+        className={`pointer-events-none ${
+          !open ? 'max-h-0 opacity-0' : 'min-h-screen overflow-hidden'
+        }`}
       />
 
       {open && (
