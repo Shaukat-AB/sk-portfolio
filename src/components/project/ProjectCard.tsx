@@ -49,7 +49,12 @@ export const ProjectButtonGroup = ({
   return (
     <div className="flex gap-4 justify-start">
       <Button asChild className="text-sm" variant="outline" size="sm">
-        <a href={githubLink}>
+        <a
+          href={githubLink}
+          target="_blank"
+          rel="noopener noreferrer"
+          referrerPolicy="no-referrer"
+        >
           <GitHubIcon className="size-4 text-text-active" />
           View Github
         </a>
@@ -57,7 +62,12 @@ export const ProjectButtonGroup = ({
 
       {demoLink?.startsWith('http') && (
         <Button asChild className="text-sm" variant="outline" size="sm">
-          <a href={demoLink}>
+          <a
+            href={demoLink}
+            target="_blank"
+            rel="noopener noreferrer"
+            referrerPolicy="no-referrer"
+          >
             <ExternalLinkIcon className="size-4" />
             View Demo
           </a>
