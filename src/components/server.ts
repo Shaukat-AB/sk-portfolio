@@ -1,7 +1,7 @@
 export { FooterFragment, SocialLinks } from './footer/FooterFragment';
 
 export { ProjectsWrapper } from './project/ProjectsWrapper';
-export { ProjectCard, ProjectButtonGroup } from './project/ProjectCard';
+export { ProjectCard, ProjectButtonGroup } from './project/project-card';
 
 export { ContactCard } from './ContactCard';
 export { MailToLink } from './MailToLink';

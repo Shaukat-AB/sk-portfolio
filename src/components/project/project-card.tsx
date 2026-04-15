@@ -1,9 +1,11 @@
-import Link from 'next/link';
+import { ExternalLinkIcon, GitHubIcon, LongArrowRightIcon } from '@/lib/icons';
+import { ProjectMetaData } from '@/lib/projects';
+
 import { Button } from '../ui/button';
 import { CardContent, CardDescription, CardTitle } from '../ui/card';
-import { ExternalLinkIcon, GitHubIcon, LongArrowRightIcon } from '@/lib/icons';
+
 import { ImageCarousel } from './ImageCarousel';
-import { ProjectMetaData } from '@/lib/projects';
+import Link from 'next/link';
 
 export const ProjectCard = ({
   title,
