@@ -1,6 +1,8 @@
 import type { Metadata } from 'next';
+
 import { Inter } from 'next/font/google';
 import './globals.css';
+
 import { FooterFragment, GlassBg } from '@/components/server';
 import { Navbar, ThemeProvider } from '@/components/client';
 
@@ -16,6 +18,8 @@ export const metadata: Metadata = {
   },
   description:
     'This project showcases my work and skills as full stack developer built using Next.js and Tailwind CSS for responsive layout.',
+
+  icons: '/icon.svg',
 };
 
 export default function RootLayout({
