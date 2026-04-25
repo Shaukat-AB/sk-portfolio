@@ -16,20 +16,24 @@ export default async function Home() {
   return (
     <>
       <Hero />
+
       <ProjectsWrapper>
         <ProjectCard {...projects[0]} />
       </ProjectsWrapper>
 
       <Separator orientation="horizontal" className="max-w-10/12" />
+
       <div className="py-10">
         <ContactCard />
       </div>
+
       <Separator orientation="horizontal" className="ml-auto max-w-10/12" />
 
       <ProjectsWrapper>
-        {projects.map((project, i) =>
-          i > 0 ? <ProjectCard key={project.title} {...project} /> : null
-        )}
+        {/* After first show only three projects*/}
+        {projects.slice(1, 4).map((project) => (
+          <ProjectCard key={project.title} {...project} />
+        ))}
       </ProjectsWrapper>
 
       <ContactCard />
